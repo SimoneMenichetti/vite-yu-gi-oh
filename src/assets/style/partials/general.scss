@@ -1,0 +1,23 @@
+// importiamo bootstrap
+@import 'node_modules/bootstrap/scss/bootstrap';
+// importiamo il FONT
+@import 'node_modules/fontsource/monserrat/index.css';
+@import 'node_modules/fontsource/monserrat/700.css';
+
+// inclusione  variables 
+@use './variabiles' as*;
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+// layout
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+
+}
