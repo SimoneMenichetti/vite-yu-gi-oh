@@ -2,18 +2,19 @@
 // esportiamo il componente SingleCharacterCard
 export default{
     name:'SingleCharacterCard',
+    props:['info'],
 }
 </script>
 
 <template>
     <div class="card text-center ">
-        <img class="img-fluid mb-3 " src="https://th.bing.com/th/id/R.5e9ce1ad62c4bb675bbd507acbb159aa?rik=XDaALsmXEZtxTQ&riu=http%3a%2f%2fimages.jedessine.com%2f_uploads%2f_tiny_galerie%2f20081145%2fcarte_b1p.jpg&ehk=sOhTp7basNF%2fBvRXJiXZM8ofbsvfPnKG%2fkYLErvv5uI%3d&risl=&pid=ImgRaw&r=0" alt="">
+        <img :src="info.card_images[0].image_url" alt="" class="img-fluid mb-3 ">
         
         <h5 class="card-title font-weight-bold text-white ">
-            "A" CELL BREEDING DEVICE
+            {{info.name}}
         </h5>
         <p class="card-text">
-            Alien
+            {{info.archetype}}
         </p>
     </div>
     

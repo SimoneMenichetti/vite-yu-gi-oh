@@ -3,9 +3,11 @@
 import AppHeader from './components/AppHeader.vue';
 // importiamo il componente CardCharactersList
 import CardCharactersList from './components/CardCharactersList.vue';
+// importiamo axios 
+import axios from 'axios';
 
 // import dello store
-import { store } from '../src/store';
+import { store } from './store';
 
 export default{
   name:"App",
@@ -18,6 +20,24 @@ export default{
       store,
     }
   },
+  methods:{
+    getCharacters(){
+      axios.
+      get(store.apiURL)
+        .then( result =>{
+          console.log(result.data.data);
+          store.CardCharactersList= result.data.data;
+          
+        }
+      )
+      .catch(err=>{
+        console.log(err);
+      })
+    }
+  },
+    created(){
+      this.getCharacters();
+    },
 }
 </script>
 
