@@ -7,7 +7,7 @@ export default{
 
 <template>
     <!-- inserimento logo e titolo header -->
-<header class="header">
+<header class="header bg-light py-2 px-3">
   <img src="" alt="Logo">
   <h1 class="mb-0">{{message}}</h1>
 </header>
@@ -21,8 +21,6 @@ export default{
 .header {
       display: flex;
       align-items: center;
-      padding: 10px;
-      background-color: #f8f9fa; 
     }
     .header img {
       max-height: 50px;
