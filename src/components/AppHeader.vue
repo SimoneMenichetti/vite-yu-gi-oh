@@ -21,13 +21,14 @@ export default{
 .header {
       display: flex;
       align-items: center;
-    }
+   
     .header img {
       max-height: 50px;
       margin-right: 20px;
     }
     .header h1 {
       margin-bottom: 0;
-      font-size: 30px; 
+      font-size: 26px; 
     }
+}
 </style>
