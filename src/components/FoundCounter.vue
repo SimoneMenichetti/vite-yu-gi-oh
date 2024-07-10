@@ -13,9 +13,9 @@
 
 <template>
     <div class="d-flex  justify-content-center " id="founder">
-        <div class="col-10">
-            <div class="counter bg-dark text-white py-2  mt-auto">
-                <h2 class="text-left fs-6 ">Found {{ store.CardCharactersList.length }} cards</h2>
+        <div class="col-9 ">
+            <div class="counter bg-dark text-white py-2">
+                <h2 class="text-left fs-6 align-text-bottom ">Found {{ store.CardCharactersList.length }} cards</h2>
             </div>
         </div>
     </div>
@@ -25,6 +25,5 @@
     #founder{
         margin-bottom: -150px;
         margin-top: 60px;
-        
     }
 </style>
