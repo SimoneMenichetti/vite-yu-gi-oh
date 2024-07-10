@@ -1,15 +1,14 @@
 <script>
-// import dello store
-import { store } from '../store';
-export default{
-    name:'FoundeCounter',
-    data(){
-        return{
-            store,
+    // import dello store
+    import { store } from '../store';
+    export default{
+        name:'FoundeCounter',
+        data(){
+            return{
+                store,
+            }
         }
     }
-}
-
 </script>
 
 <template>
@@ -23,9 +22,9 @@ export default{
 </template>
 
 <style lang="scss" scoped>
-#founder{
-    margin-bottom: -150px;
-    margin-top: 60px;
-    
-}
+    #founder{
+        margin-bottom: -150px;
+        margin-top: 60px;
+        
+    }
 </style>

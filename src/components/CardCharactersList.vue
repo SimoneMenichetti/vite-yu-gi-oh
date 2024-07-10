@@ -15,7 +15,7 @@ export default{
             store,
         }
     }
-}
+};
 </script>
 
 <template>
@@ -27,25 +27,18 @@ export default{
             </div>
         </div>
     </div>
-    
 </template>
 
 <style scoped lang="scss">
 @use'../assets/style/partials/general.scss' as*;
 
+.card-container {
+    padding-top: 40px;
+    margin-top: 60px;
 
-    .card-container {
-        padding-top: 40px;
-        margin-top: 60px;
-       
-
-        .card{
-            background-color: #D48F38;
-            margin-top: 50px;
-        }
+    .card{
+        background-color: #D48F38;
+        margin-top: 50px;
     }
-
-
-    
-  
+}
 </style>
