@@ -54,7 +54,7 @@ export default{
   <AppHeader message="Yu-Gi-Oh Api"/>
   <main>
     <!-- richiamiamo il search @search getcharacter -->
-    <AppSearch/>
+    <AppSearch @change="getCharacters"/>
     <FoundCounter/>
     <CardCharactersList/>
   </main>
